@@ -1,7 +1,5 @@
-import 'package:app/components/page.home.dart';
+import 'package:app/pages/page.home.dart';
 import 'package:flutter/material.dart';
-
-
 
 class Login extends StatefulWidget {
   @override
@@ -24,8 +22,12 @@ class _LoginState extends State<Login> {
         child: RaisedButton(
           child: Text('Login'),
           onPressed: () {
-            Navigator.push(context, 
-            MaterialPageRoute(builder: (context) => Home()));
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => Home(),
+              ),
+            );
           },
         ),
       ),

@@ -1,4 +1,4 @@
-import 'package:app/components/page.login.dart';
+import 'package:app/pages/page.login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -40,7 +40,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,14 +50,8 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          'Build in Progress',
-          style: TextStyle(
-            color: Colors.white38,
-            fontSize: 25
-          )
-        )
-      ),
+          child: Text('Build in Progress',
+              style: TextStyle(color: Colors.white38, fontSize: 25))),
     );
   }
 }
