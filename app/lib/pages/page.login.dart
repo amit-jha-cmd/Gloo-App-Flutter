@@ -1,3 +1,4 @@
+import 'package:app/pages/page.base.dart';
 import 'package:app/pages/page.home.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +26,7 @@ class _LoginState extends State<Login> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => Home(),
+                builder: (context) => Base(),
               ),
             );
           },
