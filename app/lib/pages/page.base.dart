@@ -46,11 +46,15 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       child: Home(),
     ),
     Text(
-      'Index 1: Business',
+      'Index 1: Search',
       style: optionStyle,
     ),
     Text(
-      'Index 2: School',
+      'Index 2: Business',
+      style: optionStyle,
+    ),
+    Text(
+      'Index 3: School',
       style: optionStyle,
     ),
   ];
@@ -81,26 +85,33 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.black,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.book),
-            label: 'Library',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Colors.green,
-        unselectedItemColor: Colors.white,
-        onTap: _onItemTapped,
+      bottomNavigationBar: new Theme(
+        data: Theme.of(context).copyWith(canvasColor: Colors.black),
+        child: BottomNavigationBar(
+          backgroundColor: Colors.black,
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label: 'Search',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.book),
+              label: 'Library',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: 'Profile',
+            ),
+          ],
+          currentIndex: _selectedIndex,
+          selectedItemColor: Colors.green,
+          unselectedItemColor: Colors.white,
+          onTap: _onItemTapped,
+        ),
       ),
     );
   }
