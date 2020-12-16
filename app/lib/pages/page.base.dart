@@ -1,4 +1,6 @@
+import 'package:app/components/CustomeSearchDelegate.dart';
 import 'package:app/pages/page.home.dart';
+import 'package:app/pages/page.search.dart';
 
 /// Flutter code sample for BottomNavigationBar
 
@@ -39,15 +41,20 @@ class MyStatefulWidget extends StatefulWidget {
 /// This is the private State class that goes with MyStatefulWidget.
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
+  List<String> PageName = [
+    "Home",
+    "Search",
+    "Library",
+    "Profile",
+  ];
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     Container(
       child: Home(),
     ),
-    Text(
-      'Index 1: Search',
-      style: optionStyle,
+    Container(
+      child: PageSearch(),
     ),
     Text(
       'Index 2: Business',
@@ -69,16 +76,22 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: Text(PageName[_selectedIndex]),
         centerTitle: true,
         backgroundColor: Colors.black,
         actions: [
           IconButton(
             icon: Icon(
-              Icons.settings,
+              (_selectedIndex != 1) ? Icons.settings : Icons.search,
               color: Colors.white,
             ),
-            onPressed: null,
+            onPressed: () {
+              if (_selectedIndex != 1) {
+                // Do something for settings
+              } else {
+                showSearch(context: context, delegate: CustomSearchDelegate());
+              }
+            },
           ),
         ],
       ),

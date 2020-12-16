@@ -6,8 +6,8 @@ class FeaturedCard extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width - 40,
       margin: EdgeInsets.only(
-        left: 20,
-        right: 20,
+        left: 10,
+        right: 10,
         top: 10,
         bottom: 10,
       ),
