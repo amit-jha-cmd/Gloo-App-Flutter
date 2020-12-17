@@ -1,6 +1,8 @@
 import 'package:app/components/CustomeSearchDelegate.dart';
 import 'package:app/pages/page.home.dart';
-import 'package:app/pages/page.search.dart';
+import 'package:app/pages/page.explore.dart';
+import 'package:app/pages/page.library.dart';
+import 'package:app/pages/page.profile.dart';
 
 /// Flutter code sample for BottomNavigationBar
 
@@ -43,7 +45,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
   List<String> PageName = [
     "Home",
-    "Search",
+    "Explore",
     "Library",
     "Profile",
   ];
@@ -54,15 +56,13 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       child: Home(),
     ),
     Container(
-      child: PageSearch(),
+      child: Explore(),
     ),
-    Text(
-      'Index 2: Business',
-      style: optionStyle,
+    Container(
+      child: PageLibrary(),
     ),
-    Text(
-      'Index 3: School',
-      style: optionStyle,
+    Container(
+      child: PageProfile(),
     ),
   ];
 
