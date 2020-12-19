@@ -1,4 +1,4 @@
-import 'package:app/components/explore.card.dart';
+import 'package:app/src/ui/components/explore.card.dart';
 import 'package:flutter/material.dart';
 
 class ExploreCardRow extends StatelessWidget {

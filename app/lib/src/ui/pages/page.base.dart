@@ -1,8 +1,8 @@
-import 'package:app/components/CustomeSearchDelegate.dart';
-import 'package:app/pages/page.home.dart';
-import 'package:app/pages/page.explore.dart';
-import 'package:app/pages/page.library.dart';
-import 'package:app/pages/page.profile.dart';
+import 'package:app/src/ui/components/CustomeSearchDelegate.dart';
+import 'package:app/src/ui/pages/page.home.dart';
+import 'package:app/src/ui/pages/page.explore.dart';
+import 'package:app/src/ui/pages/page.library.dart';
+import 'package:app/src/ui/pages/page.profile.dart';
 
 /// Flutter code sample for BottomNavigationBar
 

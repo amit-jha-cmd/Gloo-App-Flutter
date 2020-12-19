@@ -1,4 +1,4 @@
-import 'package:app/components/explore.cardrow.dart';
+import 'package:app/src/ui/components/explore.cardrow.dart';
 import 'package:flutter/material.dart';
 
 class Explore extends StatelessWidget {

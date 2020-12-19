@@ -1,4 +1,4 @@
-import 'package:app/components/InheritedBlocs.dart';
+import 'package:app/src/ui/components/InheritedBlocs.dart';
 import 'package:flutter/material.dart';
 
 class CustomSearchDelegate extends SearchDelegate {

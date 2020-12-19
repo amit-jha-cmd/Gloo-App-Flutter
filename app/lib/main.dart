@@ -1,4 +1,4 @@
-import 'package:app/pages/page.login.dart';
+import 'package:app/src/ui/pages/page.login.dart';
 import 'package:flutter/material.dart';
 
 void main() {

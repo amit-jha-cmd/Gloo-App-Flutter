@@ -1,4 +1,4 @@
-import 'package:app/components/featured.card.dart';
+import 'package:app/src/ui/components/featured.card.dart';
 import 'package:flutter/material.dart';
 
 class HomeFeatured extends StatelessWidget {

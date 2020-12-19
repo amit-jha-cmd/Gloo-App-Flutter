@@ -1,5 +1,4 @@
-import 'package:app/components/explore.hlist.dart';
-import 'package:app/components/home.hlist.dart';
+import 'package:app/src/ui/components/explore.hlist.dart';
 import 'package:flutter/material.dart';
 
 class PageLibrary extends StatelessWidget {

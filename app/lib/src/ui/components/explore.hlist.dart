@@ -1,15 +1,15 @@
-import 'package:app/components/home.card.dart';
+import 'package:app/src/ui/components/home.card.dart';
 import 'package:flutter/material.dart';
 
 class ExploreHList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 150,
+      height: 180,
       child: Column(
         children: [
           SizedBox(
-            height: 125,
+            height: 170,
             child: ListView(
               scrollDirection: Axis.vertical,
               children: [

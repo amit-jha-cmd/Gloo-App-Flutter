@@ -1,17 +1,17 @@
-import 'package:app/components/hlist.bar.dart';
-import 'package:app/components/home.card.dart';
+import 'package:app/src/ui/components/hlist.bar.dart';
+import 'package:app/src/ui/components/home.card.dart';
 import 'package:flutter/material.dart';
 
 class HomeHlist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 150,
+      height: 190,
       child: Column(
         children: [
           HlistBar(),
           SizedBox(
-            height: 125,
+            height: 160,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
